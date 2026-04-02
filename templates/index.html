@@ -3,240 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Матрица судьбы | Разбор денег, отношений и энергии</title>
-    <meta name="description" content="Персональный разбор матрицы судьбы: деньги, отношения, энергия, сценарии и точка роста.">
+    <title>Матрица судьбы | Личный разбор</title>
+    <meta name="description" content="Матрица судьбы — это код твоей жизни. Личный разбор: деньги, отношения, энергия и точка роста.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header class="hero">
         <div class="hero-overlay"></div>
+        <div class="hero-stars" aria-hidden="true"></div>
+
         <div class="topbar">
-            <div class="brand">KARMA<br>CODE</div>
-            <a class="top-link" href="#pricing">Тарифы</a>
+            <div class="brand">Karma Code</div>
+            <a class="top-link" href="#pricing">Форматы</a>
         </div>
 
-        <div class="container hero-inner">
-            <div class="hero-badge">🔮 персональный разбор матрицы судьбы</div>
-            <h1>ПОЙМИ, ЧТО ТЕБЯ <span>ТОРМОЗИТ</span>, И УЗНАЙ, <span>КУДА ТЕБЕ ИДТИ ДАЛЬШЕ</span></h1>
-            <div class="hero-sub">💫 Понимание себя уже после первого разбора</div>
-            <a class="btn btn-primary hero-btn" href="https://t.me/karmacode_matrix_bot" target="_blank">ПОЛУЧИТЬ РАЗБОР</a>
-            <p class="hero-note">деньги • отношения • энергия • реализация</p>
+        <div class="container hero-layout">
+            <div class="hero-copy">
+                <div class="hero-kicker">Персональный разбор матрицы судьбы</div>
+                <h1>Матрица судьбы — это код твоей жизни.</h1>
+                <p class="hero-text">Начни менять его прямо сейчас и увидь, где именно для тебя открываются деньги, отношения и энергия.</p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">Получить разбор</a>
+                    <a class="btn btn-secondary" href="#meaning">Что это такое</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img src="{{ url_for('static', filename='matrix-reference-bg.jpg') }}" alt="Матрица судьбы" class="hero-art">
+
+                <div class="hero-geometry" aria-hidden="true">
+                    <span class="geo-ring ring-1"></span>
+                    <span class="geo-ring ring-2"></span>
+                    <span class="geo-ring ring-3"></span>
+                    <span class="geo-line line-1"></span>
+                    <span class="geo-line line-2"></span>
+                    <span class="geo-line line-3"></span>
+                    <span class="geo-line line-4"></span>
+                    <span class="geo-node node-a"></span>
+                    <span class="geo-node node-b"></span>
+                    <span class="geo-node node-c"></span>
+                    <span class="geo-node node-d"></span>
+                    <span class="geo-node node-e"></span>
+                    <span class="geo-node node-f"></span>
+                    <span class="geo-node node-center"></span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="section result">
-        <div class="container two-col">
-            <div class="panel big">
-                <div class="section-mini">что ты получишь</div>
-                <h2>РЕЗУЛЬТАТ <span>СРАЗУ ПОСЛЕ РАЗБОРА</span></h2>
+    <section class="section meaning" id="meaning">
+        <div class="container meaning-grid">
+            <div class="meaning-copy">
+                <div class="section-kicker">Что это такое</div>
+                <h2>Матрица судьбы показывает то, что обычно скрыто от тебя</h2>
                 <p>
-                    Не просто описание арканов, а понятное объяснение:
-                    почему у тебя именно так идут деньги, отношения и энергия.
+                    Она помогает увидеть внутренние сценарии, сильные стороны,
+                    повторяющиеся уроки, денежный потенциал и ту точку,
+                    через которую жизнь начинает меняться.
                 </p>
             </div>
 
-            <div class="stack">
-                <div class="mini-card">
-                    <div class="icon">💰</div>
-                    <div>
-                        <h3>УВИДИШЬ ДЕНЕЖНЫЙ БЛОК</h3>
-                        <p>Поймёшь, где тормозится доход и через что тебе легче расти.</p>
-                    </div>
-                </div>
-                <div class="mini-card">
-                    <div class="icon">❤️</div>
-                    <div>
-                        <h3>ПОЙМЁШЬ СЦЕНАРИЙ ОТНОШЕНИЙ</h3>
-                        <p>Увидишь, что у тебя повторяется и почему это снова приходит в жизнь.</p>
-                    </div>
-                </div>
-                <div class="mini-card">
-                    <div class="icon">⚡</div>
-                    <div>
-                        <h3>НАЙДЁШЬ СЛИВ ЭНЕРГИИ</h3>
-                        <p>Станет ясно, что тебя истощает и где твой настоящий ресурс.</p>
-                    </div>
-                </div>
+            <div class="meaning-cards">
+                <article class="soft-card card-gold">
+                    <div class="card-icon icon-gold">✦</div>
+                    <h3>Зачем это человеку</h3>
+                    <p>Чтобы перестать идти вслепую и наконец понять, где именно у тебя утекают силы, деньги и возможности.</p>
+                </article>
+
+                <article class="soft-card card-violet">
+                    <div class="card-icon icon-violet">◌</div>
+                    <h3>Что меняется после разбора</h3>
+                    <p>Ты начинаешь яснее видеть, почему принимаешь именно такие решения, что происходит в отношениях и куда тебе действительно стоит двигаться.</p>
+                </article>
+
+                <article class="soft-card card-cyan">
+                    <div class="card-icon icon-cyan">✧</div>
+                    <h3>Почему это важно сейчас</h3>
+                    <p>Иногда одного точного осознания уже достаточно, чтобы разорвать повторяющийся сценарий и начать жить по-другому.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="section system">
-        <div class="container two-col">
-            <div class="panel big">
-                <div class="section-mini">как это работает</div>
-                <h2>СИСТЕМА, КОТОРАЯ ДАЁТ <span>ЯСНОСТЬ</span></h2>
+    <section class="section values">
+        <div class="container section-head">
+            <div class="section-kicker">Что ты получишь</div>
+            <h2>Не просто описание, а ощущение, что ты видишь свою жизнь изнутри</h2>
+        </div>
+
+        <div class="container values-grid">
+            <article class="soft-card card-gold feature-card">
+                <div class="card-icon icon-gold">💰</div>
+                <span class="card-number">01</span>
+                <h3>Деньги</h3>
+                <p>Увидишь, что мешает деньгам идти легче, какой страх держит тебя в ограничении и через что у тебя реально открывается рост.</p>
+            </article>
+
+            <article class="soft-card card-violet feature-card">
+                <div class="card-icon icon-violet">❤️</div>
+                <span class="card-number">02</span>
+                <h3>Отношения</h3>
+                <p>Поймёшь, какой сценарий снова и снова повторяется, что ты приносишь в близость и почему чувства складываются именно так.</p>
+            </article>
+
+            <article class="soft-card card-cyan feature-card">
+                <div class="card-icon icon-cyan">⚡</div>
+                <span class="card-number">03</span>
+                <h3>Энергия</h3>
+                <p>Увидишь, что тебя истощает, где уходит ресурс и через что ты на самом деле наполняешься и приходишь в силу.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section insight">
+        <div class="container section-head">
+            <div class="section-kicker">Что ты увидишь глубже</div>
+            <h2>Твоя матрица объясняет не только кто ты, но и почему всё складывается именно так</h2>
+        </div>
+
+        <div class="container insight-grid">
+            <article class="insight-card">
+                <div class="card-icon icon-gold">☼</div>
+                <h3>Сильные стороны</h3>
+                <p>Поймёшь, что в тебе уже является силой и как превратить это в ресурс, который будет работать на тебя.</p>
+            </article>
+
+            <article class="insight-card">
+                <div class="card-icon icon-violet">◐</div>
+                <h3>Повторяющиеся уроки</h3>
+                <p>Увидишь, какие ситуации возвращаются снова и снова, и почему жизнь через них пытается тебе что-то показать.</p>
+            </article>
+
+            <article class="insight-card">
+                <div class="card-icon icon-cyan">✺</div>
+                <h3>Точка роста</h3>
+                <p>Станет ясно, на что тебе важно смотреть именно сейчас, чтобы не распыляться и начать двигаться быстрее.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section process">
+        <div class="container process-grid">
+            <div class="process-copy">
+                <div class="section-kicker">Как это работает</div>
+                <h2>Одна дата рождения. Несколько важных ответов.</h2>
                 <p>
-                    Разбор строится не на общих фразах, а на твоей дате рождения,
-                    5 главных точках матрицы и их влиянии на твою жизнь.
+                    Я рассчитываю ключевые точки матрицы и собираю из них цельную картину:
+                    где ты сильна, где застреваешь и куда тебе лучше двигаться дальше.
                 </p>
             </div>
 
-            <div class="stack">
-                <div class="mini-card">
-                    <div class="icon">1</div>
-                    <div>
-                        <h3>ТЫ ОТПРАВЛЯЕШЬ ДАТУ</h3>
-                        <p>Я рассчитываю основные точки твоей матрицы.</p>
-                    </div>
+            <div class="process-steps">
+                <div class="step step-gold">
+                    <span>1</span>
+                    <p>Ты отправляешь дату рождения, и мы открываем твою личную карту.</p>
                 </div>
-                <div class="mini-card">
-                    <div class="icon">2</div>
-                    <div>
-                        <h3>Я СМОТРЮ КЛЮЧЕВЫЕ ЭНЕРГИИ</h3>
-                        <p>Ресурс, талант, задачи души, карму и зону комфорта.</p>
-                    </div>
+                <div class="step step-violet">
+                    <span>2</span>
+                    <p>Я смотрю главные точки матрицы и вижу, где у тебя ресурс, а где внутренний узел.</p>
                 </div>
-                <div class="mini-card">
-                    <div class="icon">3</div>
-                    <div>
-                        <h3>ТЫ ПОЛУЧАЕШЬ РАЗБОР</h3>
-                        <p>Деньги, отношения, энергия и конкретные шаги дальше.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section trust">
-        <div class="container">
-            <div class="section-mini">почему это ценно</div>
-            <h2>ФОРМАТ <span>ПОД ТВОЮ ЖИЗНЬ</span></h2>
-
-            <div class="trust-grid">
-                <div class="panel trust-box">
-                    <h3>ПОНЯТНО</h3>
-                    <p>Без сложных слов и воды. Ты понимаешь, что происходит именно у тебя.</p>
-                </div>
-                <div class="panel trust-box">
-                    <h3>ГЛУБОКО</h3>
-                    <p>Не просто “какой аркан”, а как он влияет на деньги, отношения и внутреннее состояние.</p>
-                </div>
-                <div class="panel trust-box">
-                    <h3>С РЕЗУЛЬТАТОМ</h3>
-                    <p>В конце ты получаешь не только понимание, но и что делать дальше.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section reviews">
-        <div class="container">
-            <div class="section-mini">отзывы</div>
-            <h2>ЛЮДИ ГОВОРЯТ, ЧТО <span>ВСЁ СТАНОВИТСЯ ПОНЯТНЕЕ</span></h2>
-
-            <div class="cards-3">
-                <div class="review-card">
-                    <p>«Очень точно попал в характер и деньги. Я реально увидел, где сам себя торможу.»</p>
-                    <span>⭐️⭐️⭐️⭐️⭐️</span>
-                </div>
-                <div class="review-card">
-                    <p>«После разбора стало намного понятнее, почему в отношениях у меня повторяются одни и те же ситуации.»</p>
-                    <span>⭐️⭐️⭐️⭐️⭐️</span>
-                </div>
-                <div class="review-card">
-                    <p>«Самое сильное — это ощущение, что мне объяснили мою жизнь по сути и без воды.»</p>
-                    <span>⭐️⭐️⭐️⭐️⭐️</span>
+                <div class="step step-cyan">
+                    <span>3</span>
+                    <p>Ты получаешь разбор, после которого становится понятнее, что с тобой происходит и что делать дальше.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="section pricing" id="pricing">
-        <div class="container">
-            <div class="section-mini">тарифы</div>
-            <h2>ВЫБЕРИ <span>СВОЙ ФОРМАТ</span></h2>
+        <div class="container section-head">
+            <div class="section-kicker">Форматы</div>
+            <h2>Выбери глубину разбора</h2>
+        </div>
 
-            <div class="cards-2">
-                <div class="price-card">
-                    <div class="price-top">БАЗОВЫЙ РАЗБОР</div>
-                    <div class="price-value">5€</div>
-                    <p class="price-desc">Для тех, кто хочет быстро понять, что у него происходит.</p>
-                    <ul>
-                        <li>🔮 5 главных точек матрицы</li>
-                        <li>💰 разбор денег</li>
-                        <li>❤️ разбор отношений</li>
-                        <li>⚡ разбор энергии</li>
-                        <li>🚀 рекомендации</li>
-                    </ul>
-                    <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">ЗАКАЗАТЬ</a>
-                </div>
+        <div class="container pricing-grid">
+            <article class="price-card">
+                <div class="price-name">Базовый разбор</div>
+                <div class="price-value">5€</div>
+                <p class="price-note">Для тех, кто хочет быстро понять, что именно сейчас происходит в его жизни.</p>
+                <ul>
+                    <li>5 главных точек твоей матрицы</li>
+                    <li>Где блок по деньгам</li>
+                    <li>Что повторяется в отношениях</li>
+                    <li>Где уходит энергия</li>
+                </ul>
+                <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">Заказать</a>
+            </article>
 
-                <div class="price-card featured">
-                    <div class="price-badge">самый популярный</div>
-                    <div class="price-top">КОНСУЛЬТАЦИЯ 1:1</div>
-                    <div class="price-value">10€</div>
-                    <p class="price-desc">Для тех, кому нужен более глубокий и личный разбор.</p>
-                    <ul>
-                        <li>🌟 персональный формат</li>
-                        <li>🧠 ответы на вопросы</li>
-                        <li>📍 разбор под твою ситуацию</li>
-                        <li>🔥 глубже и точнее базового</li>
-                    </ul>
-                    <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">ЗАПИСАТЬСЯ</a>
-                </div>
-            </div>
+            <article class="price-card featured">
+                <div class="price-badge">Более глубоко</div>
+                <div class="price-name">Консультация 1:1</div>
+                <div class="price-value">10€</div>
+                <p class="price-note">Если хочется не просто описание, а глубокий личный разбор именно под свою ситуацию.</p>
+                <ul>
+                    <li>Разбор под твою жизнь</li>
+                    <li>Ответы на личные вопросы</li>
+                    <li>Больше точности и глубины</li>
+                    <li>Фокус на том, что болит сейчас</li>
+                </ul>
+                <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">Записаться</a>
+            </article>
         </div>
     </section>
 
-    <section class="section first-offer">
-        <div class="container">
-            <div class="offer-banner">
-                <div class="offer-label">твоё начало</div>
-                <h2>ПЕРВЫЙ РАЗБОР — <span>5€</span></h2>
-                <p>
-                    Начни с базового разбора и пойми,
-                    как у тебя работают деньги, отношения, энергия
-                    и где сейчас твоя главная точка роста.
-                </p>
-                <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">ЗАКАЗАТЬ РАЗБОР</a>
-            </div>
+    <section class="section final">
+        <div class="container final-panel">
+            <div class="section-kicker">Финальный шаг</div>
+            <h2>Если хочешь больше ясности, начни с разбора</h2>
+            <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">Перейти в Telegram</a>
         </div>
     </section>
 
-    <section class="section faq">
-        <div class="container">
-            <div class="section-mini">faq</div>
-            <h2>ЧАСТЫЕ <span>ВОПРОСЫ</span></h2>
-
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>Что нужно для разбора?</h3>
-                    <p>Только твоя дата рождения. Этого уже достаточно, чтобы рассчитать основные точки матрицы.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Сколько ждать разбор?</h3>
-                    <p>Обычно в течение 24 часов после оплаты.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Это подойдёт, если я ничего не знаю о матрице судьбы?</h3>
-                    <p>Да. Всё объясняется простым языком, без сложных терминов и воды.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Можно ли задать вопрос по своей ситуации?</h3>
-                    <p>Да. Для этого лучше подойдёт консультация 1:1, где можно разобрать именно твою проблему глубже.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section final-cta">
-        <div class="container panel center">
-            <div class="section-mini">финальный шаг</div>
-            <h2>ГОТОВ УВИДЕТЬ, ЧТО У ТЕБЯ ИДЁТ <span>НЕ ТАК</span>?</h2>
-            <p>
-                Иногда одного точного разбора уже достаточно, чтобы понять,
-                где ты теряешь силы, что мешает деньгам и куда тебе реально двигаться дальше.
-            </p>
-            <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">ПЕРЕЙТИ В TELEGRAM</a>
-        </div>
-    </section>
-
-    <a class="floating-telegram" href="https://t.me/karmacode_matrix_bot" target="_blank" aria-label="Telegram">
-        ✈
-    </a>
+    <a class="floating-telegram" href="https://t.me/karmacode_matrix_bot" target="_blank" aria-label="Telegram">✦</a>
 </body>
 </html>
