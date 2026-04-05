@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Матрица судьбы | Личный разбор</title>
-    <meta name="description" content="Матрица судьбы — это система, которая соединяет нумерологию и архетипы Таро, чтобы показать твои сценарии, сильные стороны и точки роста.">
+    <title>Матрица судьбы | Путь к глубокому пониманию себя</title>
+    <meta name="description" content="Раскрой свои сильные стороны, задачу души, денежный потенциал, отношения и поддержку рода через дату рождения.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,227 +12,263 @@
 </head>
 <body>
     <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-stars" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-left"></div>
+        <div class="hero-glow hero-glow-right"></div>
 
         <div class="topbar">
             <div class="brand">Karma Code</div>
-            <a class="top-link" href="#pricing">Форматы</a>
+            <a class="top-link" href="#matrix-points">Точки матрицы</a>
         </div>
 
         <div class="container hero-layout">
             <div class="hero-copy">
-                <div class="hero-kicker">Персональный разбор матрицы судьбы</div>
-                <h1>Матрица судьбы — это код твоей жизни.</h1>
-                <p class="hero-text">
-                    Это способ увидеть, почему в твоей жизни повторяются одни и те же ситуации,
-                    где скрыт твой ресурс и через какую точку у тебя начинаются настоящие перемены.
+                <div class="eyebrow">Матрица судьбы</div>
+                <h1>Матрица судьбы — путь к глубокому пониманию себя</h1>
+                <p class="hero-subtitle">
+                    Раскрой свои сильные стороны, задачу души, денежный потенциал,
+                    отношения и поддержку рода через дату рождения.
                 </p>
-
                 <div class="hero-actions">
-                    <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">Получить разбор</a>
-                    <a class="btn btn-secondary" href="#meaning">Как это работает</a>
+                    <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">Рассчитать матрицу</a>
                 </div>
+                <p class="hero-note">Понимание себя начинается с одного шага.</p>
             </div>
 
             <div class="hero-visual">
-                <video class="hero-video" autoplay muted loop playsinline preload="metadata">
-                    <source src="{{ url_for('static', filename='hero-video.mp4') }}" type="video/mp4">
-                </video>
-
-                <div class="hero-geometry" aria-hidden="true">
-                    <span class="geo-ring ring-1"></span>
-                    <span class="geo-ring ring-2"></span>
-                    <span class="geo-ring ring-3"></span>
-                    <span class="geo-line line-1"></span>
-                    <span class="geo-line line-2"></span>
-                    <span class="geo-line line-3"></span>
-                    <span class="geo-line line-4"></span>
-                    <span class="geo-node node-a"></span>
-                    <span class="geo-node node-b"></span>
-                    <span class="geo-node node-c"></span>
-                    <span class="geo-node node-d"></span>
-                    <span class="geo-node node-e"></span>
-                    <span class="geo-node node-f"></span>
-                    <span class="geo-node node-center"></span>
+                <div class="hero-frame">
+                    <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="{{ url_for('static', filename='hero-video.mp4') }}" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="section meaning" id="meaning">
-        <div class="container meaning-grid meaning-grid-rich">
-            <div class="meaning-visual-card">
-                <img class="meaning-diagram" src="{{ url_for('static', filename='matrix-reference-bg.jpg') }}" alt="Диаграмма матрицы судьбы">
-                <div class="system-badges">
-                    <div class="system-badge">Нумерология</div>
-                    <div class="system-plus">+</div>
-                    <div class="system-badge">Арканы Таро</div>
+    <main>
+        <section class="section intro" id="intro">
+            <div class="container narrow">
+                <div class="eyebrow">Intro</div>
+                <h2>В твоей дате рождения уже есть ответы</h2>
+                <p class="lead">
+                    Матрица судьбы помогает увидеть твои природные качества, внутренние ресурсы,
+                    жизненные уроки и направления, в которых тебе легче раскрыться по-настоящему.
+                </p>
+                <p class="lead secondary">
+                    Это способ посмотреть на себя глубже: понять свою силу, увидеть внутренние блоки,
+                    почувствовать опору и яснее увидеть свой путь.
+                </p>
+            </div>
+        </section>
+
+        <section class="section benefits" id="benefits">
+            <div class="container">
+                <div class="section-head">
+                    <div class="eyebrow">Benefits</div>
+                    <h2>Что открывает Матрица судьбы</h2>
+                </div>
+
+                <div class="card-grid three-up">
+                    <article class="info-card">
+                        <div class="card-icon">✦</div>
+                        <h3>Сильные стороны</h3>
+                        <p>Узнай, на что ты можешь уверенно опираться в жизни уже сейчас.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">◎</div>
+                        <h3>Предназначение</h3>
+                        <p>Пойми, в каком направлении тебе легче раскрывать свой потенциал.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">♡</div>
+                        <h3>Отношения</h3>
+                        <p>Разберись в своих сценариях любви, близости и взаимодействия с людьми.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">◇</div>
+                        <h3>Финансовый путь</h3>
+                        <p>Увидь, через какие качества и решения к тебе легче приходит рост и благополучие.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">◌</div>
+                        <h3>Жизненные уроки</h3>
+                        <p>Пойми, какие ситуации повторяются не случайно и чему они тебя учат.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-icon">☼</div>
+                        <h3>Поддержка рода</h3>
+                        <p>Почувствуй, где находится твой родовой ресурс и внутренняя опора.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section matrix-points" id="matrix-points">
+            <div class="container points-layout">
+                <div class="points-copy">
+                    <div class="eyebrow">Matrix Points</div>
+                    <h2>Что означают точки в Матрице судьбы</h2>
+                    <p class="section-subtitle">
+                        Каждая точка в матрице отвечает за отдельную сферу жизни:
+                        ресурс, талант, задачу души, деньги, отношения, внутренние уроки и поддержку рода.
+                    </p>
+                    <p class="section-text">
+                        На схеме показаны ключевые точки Матрицы судьбы. Именно по ним читается твой внутренний код:
+                        что даётся тебе легко, где находятся главные уроки, как раскрываются деньги,
+                        отношения и личная реализация.
+                    </p>
+                </div>
+
+                <div class="points-visual">
+                    <div class="matrix-figure-card">
+                        <img src="{{ url_for('static', filename='matrix-scheme.png') }}" alt="Схема точек Матрицы судьбы" class="matrix-figure-image">
+                    </div>
                 </div>
             </div>
 
-            <div class="meaning-copy">
-                <div class="section-kicker">Что это такое</div>
-                <h2>Матрица судьбы — это соединение двух систем: нумерологии и карт Таро</h2>
-                <p>
-                    Нумерология даёт основу: числа даты рождения, твои ключевые коды, ритмы и точки,
-                    через которые проявляется характер, ресурс и жизненные уроки.
-                </p>
-                <p>
-                    Арканы Таро добавляют глубину: они показывают архетипы, внутренние сценарии,
-                    повторяющиеся сюжеты, сильные стороны и то, как именно энергия раскрывается в жизни.
-                </p>
-                <p>
-                    Вместе эти две системы собираются в одну диаграмму, которая помогает увидеть:
-                    где ты сейчас, что тебя удерживает, в чём твоя сила и куда тебе действительно стоит идти дальше.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section values">
-        <div class="container section-head">
-            <div class="section-kicker">Что ты получишь</div>
-            <h2>Разбор, после которого становится понятно, что именно происходит в твоей жизни</h2>
-        </div>
-
-        <div class="container values-grid">
-            <article class="soft-card card-gold feature-card">
-                <div class="card-icon icon-gold">💰</div>
-                <span class="card-number">01</span>
-                <h3>Деньги</h3>
-                <p>Ты увидишь, где сам блокируешь рост, что мешает доходу идти легче и через какую роль у тебя открывается денежный поток.</p>
-            </article>
-
-            <article class="soft-card card-violet feature-card">
-                <div class="card-icon icon-violet">❤️</div>
-                <span class="card-number">02</span>
-                <h3>Отношения</h3>
-                <p>Разбор покажет, какой сценарий в близости у тебя повторяется, что ты притягиваешь и почему чувства складываются именно так.</p>
-            </article>
-
-            <article class="soft-card card-cyan feature-card">
-                <div class="card-icon icon-cyan">⚡</div>
-                <span class="card-number">03</span>
-                <h3>Энергия</h3>
-                <p>Станет ясно, где у тебя утекает ресурс, что истощает сильнее всего и через что ты реально восстанавливаешься.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="section insight">
-        <div class="container section-head">
-            <div class="section-kicker">Что ты увидишь глубже</div>
-            <h2>Матрица объясняет не только кто ты, но и почему жизнь раз за разом ведёт тебя в похожие точки</h2>
-        </div>
-
-        <div class="container insight-grid">
-            <article class="insight-card">
-                <div class="card-icon icon-gold">☼</div>
-                <h3>Сильные стороны</h3>
-                <p>Ты поймёшь, что в тебе уже является природной силой и как использовать это не эпизодами, а как опору для роста.</p>
-            </article>
-
-            <article class="insight-card">
-                <div class="card-icon icon-violet">◐</div>
-                <h3>Повторяющиеся уроки</h3>
-                <p>Станет видно, какие сюжеты возвращаются снова и снова, и зачем жизнь вообще приводит тебя именно в такие ситуации.</p>
-            </article>
-
-            <article class="insight-card">
-                <div class="card-icon icon-cyan">✺</div>
-                <h3>Точка роста</h3>
-                <p>Ты увидишь, на чём важно сфокусироваться сейчас, чтобы перестать распыляться и почувствовать движение вперёд.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="section process">
-        <div class="container process-grid">
-            <div class="process-copy">
-                <div class="section-kicker">Как это работает</div>
-                <h2>Одна дата рождения. Несколько ответов, которые собирают картину целиком.</h2>
-                <p>
-                    Я рассчитываю ключевые точки матрицы и связываю их между собой, чтобы показать не отдельные значения,
-                    а живую структуру: где твой ресурс, где внутренний узел, где деньги, где отношения и где начинается новая траектория.
-                </p>
-            </div>
-
-            <div class="process-steps">
-                <div class="step step-gold">
-                    <span>1</span>
-                    <p>Ты отправляешь дату рождения, и на её основе строится твоя личная диаграмма матрицы.</p>
-                </div>
-                <div class="step step-violet">
-                    <span>2</span>
-                    <p>Я смотрю главные точки, повторяющиеся связи и те узлы, которые сильнее всего влияют на твою жизнь сейчас.</p>
-                </div>
-                <div class="step step-cyan">
-                    <span>3</span>
-                    <p>Ты получаешь разбор, в котором становится понятно, что именно с тобой происходит и в какую сторону лучше двигаться дальше.</p>
+            <div class="container">
+                <div class="card-grid two-up">
+                    <article class="info-card compact">
+                        <h3>Точка a — ресурс</h3>
+                        <p>Показывает твою природную энергию, то, как тебя чувствуют окружающие, и через что ты восстанавливаешь силы.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Точка b — главный талант</h3>
+                        <p>Отражает врождённый дар и самое сильное позитивное проявление энергии.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Точка c — задача души</h3>
+                        <p>Показывает, для чего душа пришла в этот опыт и в каком направлении идёт развитие человека.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Точка d — главная проработка</h3>
+                        <p>Указывает на основной жизненный урок и темы, через которые человек взрослеет и меняется.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Точка e — зона комфорта души</h3>
+                        <p>Показывает привычное внутреннее состояние, из которого человек живёт и принимает решения.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Денежный канал — c1, x2, c2</h3>
+                        <p>Эти точки связаны со входом в денежный поток, энергией денег и благополучием, а также влияют на реализацию и масштаб.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Отношения — d1 и x1</h3>
+                        <p>Показывают, с чего начинаются уроки в отношениях и какими качествами обладает подходящий партнёр.</p>
+                    </article>
+                    <article class="info-card compact">
+                        <h3>Точка e1 — сила рода</h3>
+                        <p>Связана с поддержкой рода и родовым ресурсом.</p>
+                    </article>
                 </div>
             </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="container split-layout">
+                <div class="split-copy">
+                    <div class="eyebrow">Destiny</div>
+                    <h2>Предназначение — путь, по которому душа хочет раскрыться</h2>
+                    <p class="section-text">
+                        В Матрице судьбы за предназначение отвечает точка c — задача души.
+                        Она показывает, зачем ты пришёл в этот опыт, в каком направлении идёт твой рост
+                        и через какие уроки раскрывается твоя настоящая сила.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="container split-layout">
+                <div class="split-copy">
+                    <div class="eyebrow">Money</div>
+                    <h2>Деньги в матрице — это не только доход, но и способ реализации</h2>
+                    <p class="section-text">Денежная линия в матрице раскрывается через точки c1, x2 и c2.</p>
+                    <ul class="bullet-list">
+                        <li><strong>c1</strong> — вход в денежный канал, запуск линии благополучия.</li>
+                        <li><strong>x2</strong> — энергия денежного канала, связанная с увеличением денег, возможностей и ресурсов.</li>
+                        <li><strong>c2</strong> — энергия благополучия, которая помогает выйти на новый уровень и показывает внутренние денежные установки.</li>
+                    </ul>
+                    <p class="section-text secondary-text">
+                        Матрица помогает увидеть не только тему дохода, но и твой способ реализации, роста и масштаба.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="container split-layout">
+                <div class="split-copy">
+                    <div class="eyebrow">Relationships</div>
+                    <h2>Отношения начинаются с понимания своих сценариев</h2>
+                    <p class="section-text">В Матрице судьбы тема отношений раскрывается через точки d1 и x1.</p>
+                    <ul class="bullet-list">
+                        <li><strong>d1</strong> показывает, с чем в отношениях могут возникать сложности в первую очередь и какие качества важно развивать для гармоничной связи.</li>
+                        <li><strong>x1</strong> указывает, какими характеристиками обладает наиболее подходящий партнёр.</li>
+                    </ul>
+                    <p class="section-text secondary-text">
+                        Это помогает глубже увидеть свои эмоциональные сценарии и иначе посмотреть на близость и выбор партнёра.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="container split-layout">
+                <div class="split-copy">
+                    <div class="eyebrow">Rod</div>
+                    <h2>Род — это не только прошлое, но и твоя скрытая опора</h2>
+                    <p class="section-text">
+                        Матрица показывает, как на тебя влияют родовые энергии и где находится поддержка рода.
+                    </p>
+                    <ul class="bullet-list">
+                        <li><strong>e1</strong> — точка силы рода, которая запускает поддержку родовой силы.</li>
+                        <li><strong>f, y, o</strong> — родовые программы по мужскому роду.</li>
+                        <li><strong>g, k, u</strong> — родовые программы по женскому роду.</li>
+                    </ul>
+                    <p class="section-text secondary-text">
+                        Эти точки помогают понять, какие задачи могли передаться по роду, и где находится твой глубинный ресурс.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section emotional">
+            <div class="container narrow">
+                <div class="eyebrow">Emotional</div>
+                <h2>Иногда самое важное — не искать ответы вовне, а увидеть себя глубже</h2>
+                <div class="emotional-copy">
+                    <p>Матрица судьбы — это не просто интересная расшифровка по дате рождения. Это возможность посмотреть на себя внимательнее и честнее.</p>
+                    <p>Понять, почему в жизни повторяются похожие ситуации.</p>
+                    <p>Почему в одних сферах всё идёт легче, а в других будто что-то удерживает.</p>
+                    <p>Где находится твой настоящий ресурс.</p>
+                    <p>И куда тебе действительно важно двигаться дальше.</p>
+                    <p>Когда человек начинает лучше понимать свою природу, ему становится легче принимать решения, выстраивать отношения и чувствовать внутреннюю опору.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section final-cta">
+            <div class="container final-panel">
+                <div class="eyebrow">Final CTA</div>
+                <h2>Открой свою Матрицу судьбы</h2>
+                <p class="section-text centered">
+                    Твоя дата рождения уже хранит важные ответы о предназначении, деньгах, отношениях и родовых программах.
+                    Сделай шаг к более глубокому пониманию себя и своего пути.
+                </p>
+                <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">Расшифровать мою матрицу</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-line">
+        <div class="container">
+            <p>Матрица судьбы — современный способ глубже понять себя через дату рождения. Путь к себе начинается с понимания своей природы.</p>
         </div>
-    </section>
-
-    <section class="section pricing" id="pricing">
-        <div class="container section-head">
-            <div class="section-kicker">Форматы</div>
-            <h2>Выбери глубину разбора под свой запрос</h2>
-        </div>
-
-        <div class="container pricing-grid">
-            <article class="price-card">
-                <div class="price-name">Базовый разбор</div>
-                <div class="price-value">5€</div>
-                <p class="price-note">Для тех, кто хочет быстро понять, что именно сейчас происходит в его жизни и где главный узел.</p>
-                <ul>
-                    <li>5 главных точек твоей матрицы</li>
-                    <li>Где блок по деньгам</li>
-                    <li>Что повторяется в отношениях</li>
-                    <li>Где уходит энергия</li>
-                </ul>
-                <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">Заказать</a>
-            </article>
-
-            <article class="price-card featured">
-                <div class="price-badge">Более глубоко</div>
-                <div class="price-name">Консультация 1:1</div>
-                <div class="price-value">10€</div>
-                <p class="price-note">Если тебе нужен не просто разбор, а живая расшифровка именно под твою ситуацию и вопросы.</p>
-                <ul>
-                    <li>Личный формат под твою жизнь</li>
-                    <li>Ответы на конкретные вопросы</li>
-                    <li>Больше глубины и точности</li>
-                    <li>Фокус на том, что болит сейчас</li>
-                </ul>
-                <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">Записаться</a>
-            </article>
-
-            <article class="price-card premium-offer">
-                <div class="price-badge">Самое полное</div>
-                <div class="price-name">Премиум разбор</div>
-                <div class="price-value">15€</div>
-                <p class="price-note">Для тех, кто хочет получить максимальную глубину, персональные акценты и более полную картину по ключевым темам.</p>
-                <ul>
-                    <li>Полная картина по главным сферам</li>
-                    <li>Разбор повторяющихся сценариев</li>
-                    <li>Более точные рекомендации</li>
-                    <li>Фокус на ближайший период</li>
-                </ul>
-                <a class="btn btn-primary full" href="https://t.me/karmacode_matrix_bot" target="_blank">Выбрать премиум</a>
-            </article>
-        </div>
-    </section>
-
-    <section class="section final">
-        <div class="container final-panel">
-            <div class="section-kicker">Финальный шаг</div>
-            <h2>Если хочешь больше ясности, начни с разбора и увидь свою карту целиком</h2>
-            <a class="btn btn-primary" href="https://t.me/karmacode_matrix_bot" target="_blank">Перейти в Telegram</a>
-        </div>
-    </section>
-
-    <a class="floating-telegram" href="https://t.me/karmacode_matrix_bot" target="_blank" aria-label="Telegram">✦</a>
+    </footer>
 </body>
 </html>
